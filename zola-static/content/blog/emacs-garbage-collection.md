@@ -35,6 +35,6 @@ I also *basically* disable the threshold entirely when in the minibuffer. Here's
 (run-with-idle-timer 1.2 t 'garbage-collect)
 ```
 
-I have been using this for a few months and it's worked perfectly. Even when I try my best to notice the garbage collection, I can't.
+I have been using this for a few months and it's worked perfectly. I've tried my best to notice the garbage collections, I can't.
 
 > There is a package which does the same thing, called [the Garbage Collector Magic Hack](https://github.com/emacsmirror/gcmh). Personally I prefer a lower idle time, and keeping it in my own config. 

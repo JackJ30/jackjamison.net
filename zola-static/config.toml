@@ -13,5 +13,7 @@ build_search_index = true
 highlight_code = true
 highlight_theme = "nyx-bold"
 
+insert_anchor_links = "heading"
+
 [extra]
 # Put all your custom variables here

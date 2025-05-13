@@ -8,9 +8,10 @@ body {
 	padding: 0;
 }
 
-section {
+body section {
 	height: 100%;
-	margin: auto 23%;
+	max-width: 75rem;
+	margin-inline: auto;
 	padding: 1rem;
 	
 	background-color: #252422;
@@ -18,11 +19,62 @@ section {
 	font-size: 125%;
 }
 
+// text sizing
+h1, h2, h3, h4 {
+	margin-bottom: 0.3rem;
+}
+
+ul {
+	margin-top: 0;
+}
+
+p {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
 a {
 	color: #8B95C9;
+}
+
+h1 a {
+	text-decoration: none;
 }
 
 pre {
 	padding : 0.5rem;
 	border-radius: 0.3rem;
+	overflow: auto;
+	tab-size: 4;
+}
+
+.header-title {
+	margin-bottom: 0;
+	font-size: 2.5rem;
+}
+
+.subtitle {
+	margin: 0.5rem auto;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-text {
+	text-align: center;
+}
+
+blockquote {
+	background: #171615;
+	border-left: 0.7rem solid #F3E9DC;
+	border-radius: 0.5rem;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+}
+
+blockquote p {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
 }

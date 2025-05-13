@@ -10,6 +10,11 @@
 <body>
   <section class="section">
     <div class="container">
+	  {% block header %}
+	  <h1 class="header-title"><a href="{{ config.base_url }}">Jack Jamison</a></h1>
+	  {% endblock header %}
+	  <hr>
+	  <br>
       {% block content %} {% endblock content %}
     </div>
   </section>

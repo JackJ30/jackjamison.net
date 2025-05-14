@@ -1,6 +1,7 @@
 +++
-title = "Solving Emacs Garbage Collection Stutters"
+title = "A Solution to Emacs Garbage Collection Stutters"
 date = 2025-05-12
+updated = 2025-05-14
 +++
 
 The more you load Emacs up with packages, the more it starts to chug. Throw on a theme and an lsp client, and you might start to notice frequent stuttering.
@@ -37,3 +38,6 @@ I also *basically* disable the threshold entirely when in the minibuffer. Here's
 I have been using this for a few months and it's worked perfectly. I've tried my best to notice the garbage collections, I haven't been able to.
 
 > There is a package for this, called [the Garbage Collector Magic Hack](https://github.com/emacsmirror/gcmh). Personally I prefer a lower idle time than its default, and I like keeping it in my own config.
+
+# Update: IGC Branch
+After posting this article, [some users on reddit](https://www.reddit.com/r/emacs/comments/1km1by3/comment/ms750w3/) informed me that there is a [branch of emacs](https://git.savannah.gnu.org/cgit/emacs.git/tree/README-IGC?h=feature/igc#n1) in development which greatly improves the garbage collector efficiency. People are saying that it has completely eliminated their stutters. I recommend trying it out.

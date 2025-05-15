@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{% endblock title %}
+
+{% block header %}
+<div class="blog-header">
+  <div class="blog-header-left">
+	<h1 class="header-title">
+	  {{ page.title }}
+	</h1>
+	<p class="subtitle"><strong>{{ page.date }}</strong> {% if page.updated  %} <small>(updated {{ page.updated }})</small> {% endif %}</p>
+  </div>
+  <div class ="blog-header-right">
+	<h1 class="header-title"><a href="{{ config.base_url }}">Jack Jamison</a></h1>
+  </div>
+</div>
+{% endblock header %}
+
+{% block content %}
+<img src="/images/projects/{{ page.extra.cover }}" alt="{{ page.title }}">
+{{ page.content | safe }}
+{% endblock content %}

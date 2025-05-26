@@ -1,25 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>All about</h2>
-<ul>
-  <li><a href="{{ get_url(path='@/about-me.md') }}">About me</a></li>
-  <li><a href="{{ get_url(path='@/about-this-site.md') }}">About this site</a></li>
-</ul>
-<h2>Articles</h2>
-<ul>
-  <li><a href="{{ get_url(path='@/blog/emacs-garbage-collection.md') }}">Solving Emacs Garbage Collection Stutters</a></li>
-</ul>
-<h2>Projects</h2>
-<ul>
-  <li><a href="https://github.com/Martian-Technologies/Logic-Graph-Creator">Gatality Logic Simulator</a></li>
-  <li><a href="{{ get_url(path='@/projects/_index.md') }}">View More</a></li>
-</ul>
-<h2>Links</h2>
-<ul>
-  <li><a href="https://github.com/JackJ30">GitHub</a></li>
-  <li><a href="https://jackj30.github.io">Old portfolio (haven't migrated here yet)</a></li>
-</ul>
+<div class="index-section">
+  <h2>All about</h2>
+  <ul>
+	<li><a href="{{ get_url(path='@/about-me.md') }}">About me</a></li>
+	<li><a href="{{ get_url(path='@/about-this-site.md') }}">About this site</a></li>
+  </ul>
+</div>
+<div class="index-section">
+  <h2>Articles</h2>
+  <ul>
+	<li><a href="{{ get_url(path='@/blog/emacs-garbage-collection.md') }}">Solving Emacs Garbage Collection Stutters</a></li>
+  </ul>
+</div>
+<div class="index-section">
+  <h2>Projects</h2>
+  <ul>
+	<li><a href="https://github.com/Martian-Technologies/Logic-Graph-Creator">Gatality Logic Simulator</a></li>
+	<li><a href="{{ get_url(path='@/projects/_index.md') }}">View More</a></li>
+  </ul>
+</div>
+<div class="index-section">
+  <h2>Links</h2>
+  <ul>
+	<li><a href="https://github.com/JackJ30">GitHub</a></li>
+	<li><a href="https://jackj30.github.io">Old portfolio (haven't migrated here yet)</a></li>
+  </ul>
+</div>
 <hr>
 <p class="footer-text"><a href="{{ get_url(path='@/blog/_index.md') }}">All articles sorted by date</a> &#8226 <a href="{{ get_url(path='@/the-archive.md') }}">Archive</a></p>
 {% endblock content %}

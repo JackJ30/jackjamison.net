@@ -40,4 +40,4 @@ I have been using this for a few months and it's worked perfectly. I've tried my
 > There is a package for this, called [the Garbage Collector Magic Hack](https://github.com/emacsmirror/gcmh). Personally I prefer a lower idle time than its default, and I like keeping it in my own config.
 
 # Update: IGC Branch
-After posting this article, [some users on reddit](https://www.reddit.com/r/emacs/comments/1km1by3/comment/ms750w3/) informed me that there is a [branch of emacs](https://git.savannah.gnu.org/cgit/emacs.git/tree/README-IGC?h=feature/igc#n1) in development which greatly improves the garbage collector efficiency. People are saying that it has completely eliminated their stutters. I recommend trying it out.
+After posting this article, [some users on reddit](https://www.reddit.com/r/emacs/comments/1km1by3/comment/ms750w3/) informed me that there is an [Emacs branch](https://git.savannah.gnu.org/cgit/emacs.git/tree/README-IGC?h=feature/igc#n1) in development which greatly improves the garbage collector efficiency. People are saying that it has completely eliminated their stutters. I recommend trying it out.

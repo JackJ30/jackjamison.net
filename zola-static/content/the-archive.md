@@ -4,5 +4,5 @@ template = "main-page.html"
 +++
 
 Some older stuff.
-- [My old portfolio](https://jackj30.github.io)
+- [My old portfolio](https://portfolio.jackjamison.net)
 - [My previous homepage](/archive/old-homepage)

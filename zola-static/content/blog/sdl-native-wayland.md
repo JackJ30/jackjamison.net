@@ -1,6 +1,7 @@
 +++
 title = "Forcing SDL3 to actually use Wayland on Wayland."
 date = 2025-08-06
+updated = 2025-08-08
 +++
 
 [SDL3](https://wiki.libsdl.org/SDL3/FrontPage) is a great platform abstraction layer. On Linux, it compiles with support for both [X Window System](https://www.x.org/wiki/) and [Wayland](https://wayland.freedesktop.org/). This is great because it makes your app compatible with just about any desktop environment and window manager.
@@ -8,7 +9,7 @@ date = 2025-08-06
 Here's the thing. X11 apps can still run under Wayland through the XWayland compatibility layer. In the [SDL3 documentation](https://wiki.libsdl.org/SDL3/README-wayland) it says that
 > Wayland is a replacement for the X11 window system protocol and architecture and is favored over X11 by default in SDL3
 
-This sounds great. Wayland is a replacement for X11 so I would rather use it instead of X with XWayland. Wayland native apps work better with my window manager, and behave more consistently. Unfortunately, in practice **SDL does not use Wayland**. My SDL windows open using X. I don't know if it's a problem with my environment, but here's how I fixed it (for c++).
+However if your compositor does not implement the `wp_fifo_manager_v1` protocol, SDL will fall back to XWayland. I don't know the details how this protocol fits into the Wayland ecosystem but my compositor doesn't have it. Here's how I forced SDL to use Wayland anyway (for c++).
 ```c++
 for (int i = 0; i < SDL_GetNumVideoDrivers(); i++) {
     if (std::string(SDL_GetVideoDriver(i)) == "wayland") {
@@ -17,5 +18,5 @@ for (int i = 0; i < SDL_GetNumVideoDrivers(); i++) {
     }
 }
 ```
-This code will explicitly enable Wayland if it is available. Thanks to my friend Riley for helping to figure it out.
-> I've [asked about this issue](https://discourse.libsdl.org/t/is-wayland-really-default) on the SDL discourse. I'll update this post if there are any more details.
+This code will explicitly enable Wayland if it is available. Thanks to my friend Riley Beckett for helping to figure it out.
+> I [asked about this issue](https://discourse.libsdl.org/t/is-wayland-really-default) on the SDL discourse.

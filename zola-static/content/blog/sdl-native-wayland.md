@@ -16,4 +16,4 @@ for (int i = 0; i < SDL_GetNumVideoDrivers(); i++) {
     }
 }
 ```
-This code will explicitly enable Wayland if it is available. Thanks to my friend Riley Beckett for helping figure it out.
+This code will explicitly enable Wayland if it is available. Thanks to my friend Riley for helping figure it out.

@@ -8,7 +8,7 @@ Throughout my time using GNU Emacs and its package ecosystem, I've found some an
 
 # Fixes
 ## General Stutters (Caused by Garbage Collection)
-Garbage collection stutters is a common problem among Emacs users, and I have a constroversial solution which has worked for me. Basically: **only garbage collect when you are idle** (even for short periods of time). Read more about it [here]((@/blog/emacs-garbage-collection.md).
+Garbage collection stutters is a common problem among Emacs users, and I have a constroversial solution which has worked for me. Basically: **only garbage collect when you are idle** (even for short periods of time). Read more about it [here](@/blog/emacs-garbage-collection.md).
 ```lisp
 (defun my-minibuffer-setup-hook ()
   (setq gc-cons-threshold most-positive-fixnum))

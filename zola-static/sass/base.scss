@@ -1,4 +1,8 @@
 // Main styles and centering
+html {
+	color-scheme: dark;
+}
+
 body {
 	margin: 3rem auto;
 	max-width: 55rem;
@@ -8,7 +12,7 @@ body {
 	
 	background-color: #252422;
 	color: #DCE1DE;
-	font-family: arial;
+	font-family: "Courier New", Courier, monospace;
 }
 
 // more compact margins
@@ -25,6 +29,17 @@ a {
 
 h1 a {
 	text-decoration: none;
+}
+
+hr {
+	height: 0.25rem;
+	border-radius: 0.2rem;
+	border: none;
+	background-color: #2e2d2c;
+}
+
+.header-separator {
+	margin-top: -0.2rem;
 }
 
 // Blog titles
@@ -86,18 +101,25 @@ img {
 
 .footer-text {
 	text-align: center;
+	color: #2e2d2c;
 }
 
 .footer-text a {
 	text-decoration: none;
+	padding: 0rem 0.5rem;
 }
 
 .index-section {
 	background-color: #2e2d2c;
-	padding: 0.5rem;
+	padding: 0.7rem;
 	margin-top: 0.6rem;
+	border-radius: 0.4rem;
 }
 
 .index-section h2 {
-	margin-top: 0.1rem;
+	margin-top: -0.3rem;
+}
+
+.index-section ul {
+	margin-bottom: 0.3rem;
 }

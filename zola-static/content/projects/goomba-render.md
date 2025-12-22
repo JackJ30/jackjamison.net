@@ -1,5 +1,5 @@
 +++
-title = 'Goomba Render'
+title = 'Goomba Rendering Engine'
 date = 2024-11-09
 [extra]
 cover = "goomba-render.png"

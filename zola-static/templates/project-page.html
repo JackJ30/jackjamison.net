@@ -19,4 +19,7 @@
 {% block content %}
 <img src="/images/projects/{{ page.extra.cover }}" alt="{{ page.title }}">
 {{ page.content | safe }}
+{% if page.extra.youtube_id %}
+<iframe class="youtube" src="https://www.youtube.com/embed/{{ page.extra.youtube_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% endif %}
 {% endblock content %}

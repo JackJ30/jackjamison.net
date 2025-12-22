@@ -1,4 +1,11 @@
-// Main styles and centering
+// colors
+$background: #252422;
+$background_light: #2e2d2c;
+$foreground: #DCE1DE;
+$accent1: #8B95C9;
+$code-background: #171615;
+
+// main styles and centering
 html {
 	color-scheme: dark;
 }
@@ -10,12 +17,12 @@ body {
 	font-size: 1.2rem;
 	padding: 0 2rem;
 	
-	background-color: #252422;
-	color: #DCE1DE;
+	background-color: $background;
+	color: $foreground;
 	font-family: "Courier New", Courier, monospace;
 }
 
-// more compact margins
+// general customizations
 h1, h2, h3, h4 {
 	margin-bottom: 0.3rem;
 }
@@ -24,7 +31,7 @@ ul {
 }
 
 a {
-	color: #8B95C9;
+	color: $accent1;
 }
 
 h1 a {
@@ -35,21 +42,53 @@ hr {
 	height: 0.25rem;
 	border-radius: 0.2rem;
 	border: none;
-	background-color: #2e2d2c;
+	background-color: $background-light;
+}
+
+img {
+	width: 40rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.youtube {
+	width: 40rem;
+	aspect-ratio: 16/9;
+	display: block;
+	margin: 0 auto;
+}
+
+// header
+.header-title {
+	margin: 0;
+	font-size: 2.5rem;
 }
 
 .header-separator {
 	margin-top: -0.2rem;
 }
 
-// Blog titles
-.header-title {
-	margin: 0;
-	font-size: 2.5rem;
+// sections
+.index-section {
+	background-color: $background-light;
+	padding: 0.7rem;
+	margin-top: 0.6rem;
+	border-radius: 0.4rem;
 }
+
+.index-section h2 {
+	margin-top: -0.3rem;
+}
+
+.index-section ul {
+	margin-bottom: 0.3rem;
+}
+
+// blog header
 .subtitle {
 	margin: 0.5rem auto;
 }
+
 .blog-header {
 	display: flex;
 	justify-content: space-between;
@@ -65,7 +104,13 @@ hr {
 	text-align: right;
 }
 
-// Blog element styling
+// project list styling
+.project-section h2 {
+	text-align: center;
+	text-decoration: none;
+}
+
+// blog element styling
 pre {
 	padding : 0.5rem;
 	border-radius: 0.3rem;
@@ -75,7 +120,7 @@ pre {
 }
 
 blockquote {
-	background: #171615;
+	background: $code-background;
 	border-left: 0.7rem solid #F3E9DC;
 	margin: 1.5em 10px;
 	padding: 0.5em 10px;
@@ -87,39 +132,19 @@ blockquote p {
 }
 
 p code {
-	background: #171615;
+	background: $code-background;
 	padding-left: 0.25rem;
 	padding-right: 0.25rem;
 	font-family: monospace;
 }
 
-img {
-	width: 40rem;
-	display: block;
-	margin: 0 auto;
-}
-
+// index
 .footer-text {
 	text-align: center;
-	color: #2e2d2c;
+	color: $background-light;
 }
 
 .footer-text a {
 	text-decoration: none;
 	padding: 0rem 0.5rem;
-}
-
-.index-section {
-	background-color: #2e2d2c;
-	padding: 0.7rem;
-	margin-top: 0.6rem;
-	border-radius: 0.4rem;
-}
-
-.index-section h2 {
-	margin-top: -0.3rem;
-}
-
-.index-section ul {
-	margin-bottom: 0.3rem;
 }

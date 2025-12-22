@@ -5,11 +5,11 @@
 <h1 class="title">
   {{ section.title }}
 </h1>
-<ul>
   <!-- If you are using pagination, section.pages will be empty.
        You need to use the paginator object -->  
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <div class="index-section project-section">
+  <a href="{{ page.permalink | safe }}"><h2>{{ page.title }}</h2><img src="/images/projects/{{ page.extra.cover }}" alt="{{ page.title }}"></a>
+  </div>
   {% endfor %}
-</ul>
 {% endblock content %}

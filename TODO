@@ -1,7 +1,9 @@
 - [x] Images for projects in list
 - [ ] Meta descriptions (for SEO)
+- [ ] new git server
 
 Revamp
+- [x] port articles to directories
 - [ ] No subtitles in title, better title sizing
 - [ ] Everything is in sections
 - [ ] Better h1..h6 styling

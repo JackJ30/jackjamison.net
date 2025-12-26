@@ -46,7 +46,8 @@ hr {
 }
 
 img {
-	width: 40rem;
+	max-width: 40rem;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 }

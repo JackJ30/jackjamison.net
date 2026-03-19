@@ -10,3 +10,6 @@ mkdir /var/www/homepage/
 # build and sync zola
 (cd zola-static && zola build)
 rsync -av --delete ./zola-static/public/ /var/www/homepage/
+
+# sync interactive
+rsync -av --delete ./interactive/ /var/www/interactive/

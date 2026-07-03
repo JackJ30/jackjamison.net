@@ -1,10 +1,13 @@
-- [x] Images for projects in list
-- [ ] Meta descriptions (for SEO)
-- [ ] new git server
+- [x] images for projects in list
+- [x] new git server
+- [ ] git permission and private repo
+- [ ] git scripts and hooks in repo
+- [ ] cgit dark mode
+- [ ] put cgit config in repo
 
 Revamp
 - [x] port articles to directories
-- [ ] No subtitles in title, better title sizing
-- [ ] Everything is in sections
-- [ ] Better h1..h6 styling
-- [ ] Clean up project style (wide container, each element)
+- [ ] no subtitles in title, better title sizing
+- [ ] everything is in sections
+- [ ] better h1..h6 styling
+- [ ] clean up project style (wide container, each element)

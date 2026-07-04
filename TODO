@@ -1,9 +1,15 @@
 - [x] images for projects in list
 - [x] new git server
-- [ ] git permission and private repo
-- [ ] git scripts and hooks in repo
-- [ ] cgit dark mode
-- [ ] put cgit config in repo
+
+- [x] set up gitolite and cgit for push permissions and public viewing:
+      https://www.omarpolo.com/post/cgit-gitolite.html
+	  https://matejamaric.com/blog/git-server/
+	  https://0x42.sh/cgit-nginx-gitolite-a-personal-git-server/
+- [ ] cgit don't show .git, show about
+- [ ] cgit and gitolite configurations in repo
+- [ ] auto deploy website repo
+- [ ] cgit dark mode, better tab layout
+- [ ] backup
 
 Revamp
 - [x] port articles to directories

@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# grab latest
-git pull
-
 # setup nginx
 cp ./nginx/homepage.conf /etc/nginx/sites-enabled/homepage.conf
 

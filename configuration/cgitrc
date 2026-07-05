@@ -6,6 +6,7 @@ logo=/cgit.png
 virtual-root=/
 enable-index-owner=0
 clone-prefix=https://git.jackjamison.net
+source-filter=/usr/lib/cgit/filters/syntax-highlighting.py
 
 # homepage
 root-title=Jack Jamison's Repositories

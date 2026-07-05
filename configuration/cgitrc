@@ -7,8 +7,12 @@ virtual-root=/
 clone-prefix=https://git.jackjamison.net
 enable-index-owner=0
 source-filter=/usr/lib/cgit/filters/syntax-highlighting.py
+
+# about page
 about-filter=/usr/lib/cgit/filters/about-formatting.sh
 readme=:readme.md
+readme=:README.md
+readme=:README
 
 # homepage
 root-title=Jack Jamison's Repositories

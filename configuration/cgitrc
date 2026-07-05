@@ -1,0 +1,18 @@
+# resources
+css=/cgit.css
+logo=/cgit.png
+
+# settings
+virtual-root=/
+enable-index-owner=0
+clone-prefix=https://git.jackjamison.net
+
+# homepage
+root-title=Jack Jamison's Repositories
+root-desc=get my free software, foo
+
+# repos
+enable-git-config=1
+remove-suffix=1
+project-list=/var/git/projects.list
+scan-path=/var/git/repositories

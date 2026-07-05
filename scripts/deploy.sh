@@ -2,8 +2,9 @@
 set -e
 
 # symlink configs
-cp $(realpath ./configuration/homepage.conf) /etc/nginx/sites-enabled/homepage.conf
-cp $(realpath ./configuration/cgitrc) /etc/cgitrc
+cp ./configuration/homepage.conf /etc/nginx/sites-enabled/homepage.conf
+cp ./configuration/cgitrc /etc/cgitrc
+install -o git -g git ./configuration/gitolite.rc /var/git/.gitolite.rc
 
 # build and sync zola static site
 (cd zola-static && zola build)

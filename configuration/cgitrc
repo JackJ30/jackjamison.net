@@ -10,6 +10,7 @@ source-filter=/usr/lib/cgit/filters/syntax-highlighting.py
 
 # about page
 about-filter=/usr/lib/cgit/filters/about-formatting.sh
+default-page=about
 readme=:readme.md
 readme=:README.md
 readme=:README

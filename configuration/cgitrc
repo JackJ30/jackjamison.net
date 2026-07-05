@@ -4,9 +4,11 @@ logo=/cgit.png
 
 # settings
 virtual-root=/
-enable-index-owner=0
 clone-prefix=https://git.jackjamison.net
+enable-index-owner=0
 source-filter=/usr/lib/cgit/filters/syntax-highlighting.py
+about-filter=/usr/lib/cgit/filters/about-formatting.sh
+readme=:readme.md
 
 # homepage
 root-title=Jack Jamison's Repositories

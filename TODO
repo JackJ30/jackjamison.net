@@ -5,6 +5,7 @@
       https://www.omarpolo.com/post/cgit-gitolite.html
 	  https://matejamaric.com/blog/git-server/
 	  https://0x42.sh/cgit-nginx-gitolite-a-personal-git-server/
+	  https://wiki.archlinux.org/title/Cgit#Gitolite
 - [x] cgit don't show .git
 - [x] cgit and gitoliterc config in repo
 - [ ] cgit dark mode, better tab layout, about page

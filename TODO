@@ -5,10 +5,12 @@
       https://www.omarpolo.com/post/cgit-gitolite.html
 	  https://matejamaric.com/blog/git-server/
 	  https://0x42.sh/cgit-nginx-gitolite-a-personal-git-server/
-- [ ] cgit don't show .git, show about
-- [ ] cgit and gitolite configurations in repo
-- [ ] auto deploy website repo
-- [ ] cgit dark mode, better tab layout
+- [x] cgit don't show .git
+- [ ] cgit and gitoliterc config in repo
+- [ ] get rid of gitolite admin repo
+- [ ] cgit dark mode, better tab layout, about page
+  	  https://mitjafelicijan.com/making-cgit-look-nicer.html
+	  https://www.hackitu.de/cgithub/
 - [ ] backup
 
 Revamp

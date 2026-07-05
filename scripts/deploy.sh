@@ -1,12 +1,13 @@
 #!/bin/bash
+set -e
 
-# setup nginx
-cp ./nginx/homepage.conf /etc/nginx/sites-enabled/homepage.conf
+# symlink configs
+ln -sf $(realpath ./configuration/homepage.conf) /etc/nginx/sites-enabled/homepage.conf
 
-# build and sync zola
+# build and sync zola static site
 (cd zola-static && zola build)
-mkdir /var/www/homepage/
+mkdir -p /var/www/homepage/
 rsync -av --delete ./zola-static/public/ /var/www/homepage/
 
-# sync interactive
+# sync interactive site
 rsync -av --delete ./interactive/ /var/www/interactive/

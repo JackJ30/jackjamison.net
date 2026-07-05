@@ -2,8 +2,8 @@
 set -e
 
 # symlink configs
-ln -sf $(realpath ./configuration/homepage.conf) /etc/nginx/sites-enabled/homepage.conf
-ln -sf $(realpath ./configuration/cgitrc) /etc/cgitrc
+cp $(realpath ./configuration/homepage.conf) /etc/nginx/sites-enabled/homepage.conf
+cp $(realpath ./configuration/cgitrc) /etc/cgitrc
 
 # build and sync zola static site
 (cd zola-static && zola build)

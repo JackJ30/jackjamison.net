@@ -11,8 +11,20 @@
 - [ ] cgit dark mode, better tab layout, about page
   	  https://mitjafelicijan.com/making-cgit-look-nicer.html
 	  https://www.hackitu.de/cgithub/
+	  https://git.causal.agency/cgit-pink/
+	  https://git.zx2c4.com/cgit/
+- [ ] vps backup
 - [ ] get rid of gitolite admin repo
-- [ ] backup
+
+Potential Improvements to CGit:
+- Default page patch
+- Add better default styling
+- Click on things to copy them to clipboard
+- Branches go in a more reasonable place
+- List of branches which a commit is in
+- Branch compare ahead or behind
+- Web docs
+- Direct gitolite access integration
 
 Revamp
 - [x] port articles to directories

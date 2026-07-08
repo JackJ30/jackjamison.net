@@ -7,6 +7,7 @@ virtual-root=/
 clone-prefix=https://git.jackjamison.net
 enable-index-owner=0
 source-filter=/usr/lib/cgit/filters/syntax-highlighting.py
+head-include=/usr/share/cgit/head_include.html
 
 # about page
 about-filter=/usr/lib/cgit/filters/about-formatting.sh

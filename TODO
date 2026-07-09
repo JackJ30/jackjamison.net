@@ -8,12 +8,18 @@
 	  https://wiki.archlinux.org/title/Cgit#Gitolite
 - [x] cgit don't show .git
 - [x] cgit and gitoliterc config in repo
-- [ ] cgit dark mode, better tab layout, about page
+- [x] cgit styling
   	  https://mitjafelicijan.com/making-cgit-look-nicer.html
 	  https://www.hackitu.de/cgithub/
 	  https://git.causal.agency/cgit-pink/
 	  https://git.zx2c4.com/cgit/
-- [ ] vps backup
+- [x] vps backup
+
+- [ ] cgit dark mode
+- [ ] custom cgit fork, default about page
+- [ ] cgit favicons and icon
+- [ ] add my best repos, with groups
+
 - [ ] get rid of gitolite admin repo
 
 Potential Improvements to CGit:

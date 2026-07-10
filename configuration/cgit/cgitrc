@@ -1,6 +1,5 @@
 # resources
 css=/cgit.css
-head-include=/usr/share/cgit/head_include.html
 
 # settings
 virtual-root=/

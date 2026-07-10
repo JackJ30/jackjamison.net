@@ -14,23 +14,28 @@
 	  https://git.causal.agency/cgit-pink/
 	  https://git.zx2c4.com/cgit/
 - [x] vps backup
+- [x] add my best repos, with groups
 
-- [ ] cgit dark mode
 - [ ] custom cgit fork, default about page
+- [ ] cgit dark mode, add back checker color
 - [ ] cgit favicons and icon
-- [ ] add my best repos, with groups
 
 - [ ] get rid of gitolite admin repo
 
 Potential Improvements to CGit:
-- Default page patch
+- Patch for setting default page
 - Add better default styling
 - Click on things to copy them to clipboard
-- Branches go in a more reasonable place
+- Client side code highlighting
+- "Copy blob" button
+- Clicking "tree" tab resets to root of tree even if you're in a blob
+- Switch branch goes in a more reasonable place
 - List of branches which a commit is in
 - Branch compare ahead or behind
-- Web docs
+- Readme, md files, etc are displayed like the about page
 - Direct gitolite access integration
+- Somehow allow people to access private repos on web, maybe http pushing
+- Web doc version of manpage
 
 Revamp
 - [x] port articles to directories
